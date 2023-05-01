@@ -1,3 +1,6 @@
+// This is the code that I wrote fully from my mind when I got the challenge from App Brewery Bootcamp.
+// To also see the js file (upgradedApp.js) I made after I watched the solution video for this challenge.
+
 // Get players
 const players = document.querySelector(".players");
 const playerOne = document.querySelector(".player-one");
@@ -108,8 +111,3 @@ function winner() {
 
 winner()
 console.log(winner())
-
-// To-Do Later
-// - Add a "Play" button
-// - Add a input-player-name modal
-// - Change the text font and background into something awesome
