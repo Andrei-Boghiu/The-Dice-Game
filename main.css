@@ -1,0 +1,73 @@
+:root {
+    --color1: rgba(21, 80, 197, 0.7);
+    --color2: rgb(26, 152, 168);
+    --color3: rgba(33, 120, 212, 0.7);
+}
+
+@keyframes background-pan {
+    from {
+        background-position: 0% center;
+    }
+
+    to {
+        background-position: -200% center;
+    }
+}
+
+body {
+    animation: background-pan 10s linear infinite;
+    background: linear-gradient(
+        to right,
+        var(--color1),
+        var(--color2),
+        var(--color3),
+        var(--color2),
+        var(--color1)
+    );
+    background-size: 200%;
+    min-height: 98vh;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Lobster', cursive;
+    text-shadow: 6px 0 #232931;
+    font-size: 4rem;
+    color: #30c030;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Lobster', cursive;
+    text-shadow: 6px 0 #232931;
+    font-size: 3rem;
+    color: #19e0e7;
+}
+
+.players {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin: 10px;
+}
+
+img {
+    padding-left: 110px;
+    padding-right: 110px;
+}
+
+footer {
+    margin-top: auto;
+    background-color: rgb(36, 35, 35);
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+    color: white;
+}
+
+a {
+    color: aqua;
+}
